@@ -1,3 +1,9 @@
+"use client"
+
+import {TextInput} from "@repo/ui/text-input" //this is how it is imported in the web app 
+// from the ui package after exporting it in the package.json file
+
+
 export default function Home() {
   return (
     <>
@@ -12,7 +18,9 @@ export default function Home() {
         }}
       >
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-          <input type="text"></input>
+           <TextInput placeholder="Enter Room Name" onChange={()=>{
+            alert("hii")
+           }}></TextInput>
           <button>Join Room</button>
         </div>
       </div>

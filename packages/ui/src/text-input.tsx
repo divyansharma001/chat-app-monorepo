@@ -21,7 +21,7 @@ export function TextInput({
         marginBottom: "10px",
       }}
      placeholder={placeholder}
-     onChange={onChange}
+    //  onChange={onChange}
     >
 
     </input>
